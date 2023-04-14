@@ -1,0 +1,23 @@
+{
+  "root_url": "https://example.com", // Root webpage to crawl
+  "depth": 2 // Depth to which to crawl
+}
+
+Response Pay load
+
+{
+  "status": "success", // Status of the crawl (success or error)
+  "message": "Crawl completed successfully.", // Message describing the result of the crawl
+  "data": {
+    "root_url": "https://example.com", // Root webpage crawled
+    "depth": 2, // Depth crawled
+    "links": [
+      "https://example.com/page1", // Array of crawled links up to the specified depth
+      "https://example.com/page2",
+      "https://example.com/page1/subpage1",
+      "https://example.com/page1/subpage2",
+      "https://example.com/page2/subpage1",
+      "https://example.com/page2/subpage2"
+    ]
+  }
+}
